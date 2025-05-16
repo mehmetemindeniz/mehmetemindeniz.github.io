@@ -1,44 +1,99 @@
+/* Genel Stiller */
 body {
-    font-family: sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f4f8;
-    color: #333;
-  }
-  
-  header {
-    background-color: #004d7a;
-    color: white;
-    padding: 2rem;
-    text-align: center;
-  }
-  
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f4f8;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+header {
+  background-color: #004d7a;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+nav {
+  background-color: #006494;
+  text-align: center;
+  padding: 0.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #00587a;
+}
+
+section {
+  padding: 2rem;
+  max-width: 800px;
+  margin: auto;
+}
+
+footer {
+  text-align: center;
+  background-color: #003554;
+  color: white;
+  padding: 1rem;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Karanlık Tema */
+body.dark {
+  background-color: #121212;
+  color: #e0e0e0;
+}
+
+body.dark header {
+  background-color: #1f2d3d;
+}
+
+body.dark nav {
+  background-color: #27394d;
+}
+
+body.dark nav a {
+  color: #e0e0e0;
+}
+
+body.dark nav a:hover {
+  background-color: #3a4b5c;
+}
+
+body.dark footer {
+  background-color: #1a1a1a;
+  color: #aaa;
+}
+
+/* Mobil Uyum */
+@media (max-width: 768px) {
   nav {
-    background-color: #006494;
-    text-align: center;
-    padding: 0.5rem;
+    flex-direction: column;
+    align-items: center;
   }
-  
+
   nav a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
-    font-weight: bold;
+    margin: 0.5rem 0;
   }
-  
-  section {
-    padding: 2rem;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  footer {
-    text-align: center;
-    background-color: #003554;
-    color: white;
+
+  header, section, footer {
     padding: 1rem;
-    position: relative;
-    bottom: 0;
-    width: 100%;
   }
-  
+}
