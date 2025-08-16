@@ -1,152 +1,41 @@
-<!DOCTYPE html>
-<html lang="tr">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mehmet Emin Deniz</title>
-
-  <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #4f4f4f;
-    }
-
-    .hero {
-      background-image: url('arka3.png');
-      background-size: cover;
-      background-position: center;
-      min-height: 100vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 50px 15px;
-    }
-
-    .carousel-item img {
-      max-height: 70vh;
-      object-fit: cover;
-      border-radius: 15px;
-    }
-
-    footer {
-      background-color: rgb(77, 77, 77);
-      color: white;
-      padding: 15px 0;
-      margin-top: 40px;
-    }
-  </style>
-
-  <link rel="icon" type="image/gif" href="anasayfa.gif">
-</head>
-
-<body>
-
-  <!-- Navbar -->
-  <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg">
-    <a class="navbar-brand font-weight-bold" href="#">MED</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Menü">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav ml-auto text-center">
-        <li class="nav-item">
-          <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Anasayfa</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="hakkimda.html"><i class="fa-solid fa-circle-user"></i> Hakkımda</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="iletisim.html"><i class="fa-solid fa-address-card"></i> İletişim</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="projelerDropdown" role="button" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-            <i class="fa-solid fa-diagram-project"></i> Projelerim
-          </a>
-          <div class="dropdown-menu dropdown-menu-right bg-dark">
-            <a class="dropdown-item text-white" href="projeler.html">Tüm Projelerim</a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Hoşgeldiniz Mesajı -->
-  <div class="container mt-5 pt-5">
-    <div class="alert alert-secondary text-center">
-      <h2 class="text-dark">HOŞGELDİNİZ</h2>
-      <p>Bu sayfa ilgilenmekte olduğum alanlar hakkında kısa bilgiler içermektedir.</p>
-      <p>Altta bulunan kaydırmalı kartları inceleyerek aktif olarak ilgilenmekte olduğum alanları görebilirsiniz.</p>
-      <hr>
-      <p class="mb-0">Sorularınız ve tavsiyeleriniz için: 
-        <a href="mailto:mehmetemindenizofficial@gmail.com">mehmetemindenizofficial@gmail.com</a>
-      </p>
-    </div>
-  </div>
-
-  <!-- Hero ve Carousel -->
-  <div class="hero">
-    <div id="carouselExampleIndicators" class="carousel slide w-100 w-md-75" data-ride="carousel">
-
-      <ol class="carousel-indicators">
+<div id="carouselExampleIndicators" class="carousel slide mb-5 mx-auto w-75" data-ride="carousel">
+    <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-      </ol>
-
-      <div class="carousel-inner">
+    </ol>
+    <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="1 (Orta).jpg" class="d-block w-100" alt="Web Geliştirme">
-          <div class="carousel-caption d-none d-md-block">
-            <h1>WEB Geliştirme</h1>
-            <p>Frontend geliştirme üzerine çalışmalar yapıyorum.</p>
-          </div>
+            <img src="1 (Orta).jpg" class="d-block w-100 mx-auto" alt="WEB Geliştirme" style="border-radius: 5px;">
+            <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); border-radius: 10px; padding: 10px;">
+                <h2 class="h5 h3-md" style="color: #fff;">WEB Geliştirme</h2>
+                <p style="color: #fff;">Aktif olarak WEB geliştiriciliği alanında, frontend geliştirme üzerine çalışmalarımı sürdürmekteyim.</p>
+            </div>
         </div>
         <div class="carousel-item">
-          <img src="2 (Orta).jpg" class="d-block w-100" alt="Siber Güvenlik">
-          <div class="carousel-caption d-none d-md-block">
-            <h1>Siber Güvenlik</h1>
-            <p>Hobi olarak ilgilendiğim bir alan, hedefim iyi bir pentester olmak.</p>
-          </div>
+            <img src="2 (Orta).jpg" class="d-block w-100 mx-auto" alt="Siber Güvenlik" style="border-radius: 5px;">
+            <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); border-radius: 10px; padding: 10px;">
+                <h2 class="h5 h3-md" style="color: #fff;">Siber Güvenlik</h2>
+                <p style="color: #fff;">Siber güvenlik şuan için hobi olarak sevdiğim bir alan. Amacım sanal dünyada kişisel güvenliğimi sağlarken aynı zamanda iyi bir pentester olabilmek.</p>
+            </div>
         </div>
         <div class="carousel-item">
-          <img src="3 (Orta).jpg" class="d-block w-100" alt="Kripto Paralar">
-          <div class="carousel-caption d-none d-md-block">
-            <h1>Kripto Paralar & Trading</h1>
-            <p>Blockchain, Kriptoloji ve retail trading ile aktif ilgileniyorum.</p>
-          </div>
+            <img src="3 (Orta).jpg" class="d-block w-100 mx-auto" alt="Kripto Paralar" style="border-radius: 5px;">
+            <div class="carousel-caption" style="background-color: rgba(0,0,0,0.5); border-radius: 10px; padding: 10px;">
+                <h2 class="h5 h3-md" style="color: #fff;">Kripto Paralar & Trading</h2>
+                <p style="color: #fff;">Kripto Paralar, Blockchain ve Kriptoloji, bu alanda sevdiğim ve takip ettiğim konular. Aynı zamanda aktif olarak kripto borsalarında retail trading ile ilgilenmekteyim.</p>
+            </div>
         </div>
-      </div>
-
-      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="fa-solid fa-chevron-left fa-3x text-dark"></span>
-      </a>
-      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="fa-solid fa-chevron-right fa-3x text-dark"></span>
-      </a>
-
     </div>
-  </div>
 
-  <!-- Footer -->
-  <footer class="text-center">
-    <p class="mb-0">Copyright © 2025 Tüm Hakları Saklıdır.<br>
-      <cite>Mehmet Emin Deniz</cite>
-    </p>
-  </footer>
+    <button class="carousel-control-prev" type="button" data-target="#carouselExampleIndicators" data-slide="prev">
+        <span class="fa-solid fa-chevron-left fa-4x text-dark"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-target="#carouselExampleIndicators" data-slide="next">
+        <span class="fa-solid fa-chevron-right fa-4x text-dark"></span>
+    </button>
 
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-</body>
-
-</html>
+    <div style="margin-top: 20px;">
+        <button type="button" class="btn btn-primary btn-lg" style="margin-left: 90px; margin-top: -20px;">İlgilendiğim Alanlar</button>
+    </div>
+</div>
